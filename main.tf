@@ -3,21 +3,21 @@ terraform {
         
         aws = {
             source = "hashicorp/aws"
-            version = "~> <AWS PROVIDER VERSION>"
+            version = ">=4.52.0"
         }
         
         helm = {
             source = "hashicorp/helm"
-            version = "~> <HELM PROVIDER VERSION>"
+            version = ">=2.8.0"
         }
         
         kubernetes = {
             source = "hashicorp/kubernetes"
-            version = "~> <KUBERNETES PROVIDER VERSION>"
+            version = ">=2.17.0"
         }
     }
     
-    required_version = "~> <TERRAFORM VERSION>"
+    required_version = ">=1.0.2"
 }
 
 provider "aws" {
